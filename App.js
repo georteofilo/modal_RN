@@ -1,10 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.title}>Aprendendo Modal</Text>
+
+
+      <TouchableOpacity style={styles.button}>
+        <Text>Abrir</Text>
+      </TouchableOpacity>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +19,19 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#12131B',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  title:{
+    color: "#fff",
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  button:{
+    backgroundColor: "#fff",
+    padding: 4,
+    marginVertical: 8,
+    
   },
 });
